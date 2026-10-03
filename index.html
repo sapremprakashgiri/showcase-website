@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShowCase | Premium Products</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html">Show<span>Case</span></a>
+    <nav>
+      <a class="active" href="index.html">Home</a>
+      <a href="#catalog">Catalog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="wishlist-link" href="#catalog">♥ Wishlist <span id="wishlist-count">0</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">CURATED FOR YOU</p>
+        <h1>Discover products<br><span>worth owning.</span></h1>
+        <p class="hero-text">
+          Explore premium electronics, fashion and gaming essentials
+          selected for style, quality and everyday performance.
+        </p>
+        <a class="btn primary" href="#catalog">Explore Collection</a>
+      </div>
+      <div class="hero-card">
+        <div class="hero-glow"></div>
+        <img src="https://images.hitpaw.com/topics/ai-photo-tips/professional-product-mockup-wireless-headphones.jpg" alt="Premium headphones">
+        <div class="hero-card-info">
+          <span>Featured</span>
+          <strong>Wireless Headphones Pro</strong>
+          <b>₹4,999</b>
+        </div>
+      </div>
+    </section>
+
+    <section class="section featured">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">HANDPICKED</p>
+          <h2>Featured Products</h2>
+        </div>
+        <a href="#catalog" class="text-link">View all →</a>
+      </div>
+
+      <div class="product-grid featured-grid">
+        <article class="product-card">
+          <div class="product-image">
+            <img src="https://images.hitpaw.com/topics/ai-photo-tips/professional-product-mockup-wireless-headphones.jpg" alt="Wireless Headphones Pro">
+            <button class="heart-btn" data-wishlist="1" aria-label="Add headphones to wishlist">♡</button>
+          </div>
+          <div class="product-info">
+            <span class="tag">Electronics</span>
+            <h3>Wireless Headphones Pro</h3>
+            <p>Active noise cancellation and 40-hour battery.</p>
+            <div class="price-row"><strong>₹4,999</strong><a href="product.html?id=1">View →</a></div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img src="https://www.teamday.ai/images/compare-grok-product.webp" alt="Smart Watch X">
+            <button class="heart-btn" data-wishlist="2" aria-label="Add smartwatch to wishlist">♡</button>
+          </div>
+          <div class="product-info">
+            <span class="tag">Electronics</span>
+            <h3>Smart Watch X</h3>
+            <p>AMOLED display, fitness tracking and smart alerts.</p>
+            <div class="price-row"><strong>₹3,499</strong><a href="product.html?id=2">View →</a></div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img src="https://visualphoto.ru/Portfolio/ozon/hero-image.jpg" alt="Urban Sneakers">
+            <button class="heart-btn" data-wishlist="3" aria-label="Add sneakers to wishlist">♡</button>
+          </div>
+          <div class="product-info">
+            <span class="tag">Fashion</span>
+            <h3>Urban Sneakers</h3>
+            <p>Lightweight everyday sneakers with a clean design.</p>
+            <div class="price-row"><strong>₹2,799</strong><a href="product.html?id=3">View →</a></div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/a22133167086167.64232f08804ca.jpg" alt="Gaming Mouse RGB">
+            <button class="heart-btn" data-wishlist="4" aria-label="Add gaming mouse to wishlist">♡</button>
+          </div>
+          <div class="product-info">
+            <span class="tag">Gaming</span>
+            <h3>Gaming Mouse RGB</h3>
+            <p>High-precision sensor with customizable RGB lighting.</p>
+            <div class="price-row"><strong>₹1,499</strong><a href="product.html?id=4">View →</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="catalog" class="section catalog">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">SHOP</p>
+          <h2>Product Catalog</h2>
+        </div>
+        <span id="result-count" class="result-count"></span>
+      </div>
+
+      <div class="controls">
+        <div class="search-box">
+          <span>⌕</span>
+          <input id="search" type="search" placeholder="Search products..." autocomplete="off">
+        </div>
+        <select id="category" aria-label="Filter by category">
+          <option value="all">All Categories</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Fashion">Fashion</option>
+          <option value="Gaming">Gaming</option>
+        </select>
+      </div>
+
+      <div id="product-list" class="product-grid"></div>
+      <p id="no-results" class="no-results" hidden>No products found. Try another search.</p>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div>
+      <a class="logo" href="index.html">Show<span>Case</span></a>
+      <p>Premium products. Simple shopping.</p>
+    </div>
+    <p>© 2026 ShowCase | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

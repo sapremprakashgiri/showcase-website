@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details | ShowCase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html">Show<span>Case</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#catalog">Catalog</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a class="wishlist-link" href="index.html#catalog">♥ Wishlist <span id="wishlist-count">0</span></a>
+  </header>
+
+  <main>
+    <section class="product-detail">
+      <div class="gallery">
+        <div class="main-image-wrap">
+          <img id="mainImage" src="" alt="Product image">
+        </div>
+        <div id="thumbnails" class="thumbnails"></div>
+      </div>
+
+      <div class="details">
+        <span id="product-category" class="tag"></span>
+        <h1 id="product-name"></h1>
+
+        <div class="rating">
+          <span id="stars">★★★★★</span>
+          <span id="rating-text"></span>
+        </div>
+
+        <h2 id="product-price" class="price"></h2>
+        <p id="product-description" class="detail-description"></p>
+
+        <button id="wishlist-button" class="btn primary wishlist-button" type="button">
+          ♡ Add to Wishlist
+        </button>
+        <a class="btn secondary" href="index.html#catalog">← Back to Catalog</a>
+
+        <div class="detail-block">
+          <h3>Specifications</h3>
+          <table class="specs">
+            <tbody id="specs-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">CUSTOMER FEEDBACK</p>
+          <h2>Customer Reviews</h2>
+        </div>
+      </div>
+
+      <div class="reviews-grid" id="reviews-list"></div>
+
+      <div class="review-form">
+        <h3>Write a Review</h3>
+        <form id="reviewForm">
+          <div class="form-row">
+            <input id="reviewName" type="text" placeholder="Your name" required maxlength="40">
+            <select id="reviewRating" required>
+              <option value="5">5 Stars</option>
+              <option value="4">4 Stars</option>
+              <option value="3">3 Stars</option>
+              <option value="2">2 Stars</option>
+              <option value="1">1 Star</option>
+            </select>
+          </div>
+          <textarea id="reviewText" placeholder="Share your experience..." required maxlength="300"></textarea>
+          <button class="btn primary" type="submit">Submit Review</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <a class="logo" href="index.html">Show<span>Case</span></a>
+      <p>Premium products. Simple shopping.</p>
+    </div>
+    <p>© 2026 ShowCase | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
